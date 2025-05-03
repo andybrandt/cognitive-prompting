@@ -486,4 +486,5 @@ This is version 1.4 of the CNL reference. To provide feedback or contribute to i
 
 *This document is living and changing based on ongoing experimentation. Check for now versions on [https://cognitiveprompting.com/](https://cognitiveprompting.com/)* 
 
-(C) Andy Brandt 2025 \- [akbrandt@gmail.com](mailto:akbrandt@gmail.com) \- [https://www.linkedin.com/in/andybrandt/](https://www.linkedin.com/in/andybrandt/) 
+© Copyright 2025 Andy Brandt
+ \- [akbrandt@gmail.com](mailto:akbrandt@gmail.com) \- [https://www.linkedin.com/in/andybrandt/](https://www.linkedin.com/in/andybrandt/)  \- Licensed under the Apache License, Version 2.0, see `NOTICE` file in the repository.
