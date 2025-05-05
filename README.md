@@ -23,7 +23,7 @@ For a quick start:
 3. Include the CNL Prompt Architect in project instructions
 4. Begin creating CNL-based prompts for your applications
 
-[Download the complete CNL Reference (PDF)]() or [read the MarkDown version in this repository](https://github.com/andybrandt/cognitive-prompting/blob/master/Cognitive%20Notation%20Language.md).
+[Download the complete CNL Reference (PDF)](https://drive.google.com/file/d/1O976mptYXYOhwLBDzKdqbDxIdaiQrVy_/view?usp=sharing) or [read the MarkDown version in this repository](https://github.com/andybrandt/cognitive-prompting/blob/master/Cognitive%20Notation%20Language.md).
 
 ## Examples
 
