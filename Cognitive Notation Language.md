@@ -449,13 +449,27 @@ The combined prompt written in CNL should be incorporated into agent (AI) instru
 - Custom modes in agent-based software development tools like Cursor  
 - Agent instructions in code or configuration for agentic chats (swarms, groups, sequences, etc.)
 
-Each prompt should begin with a plain language preamble. This preamble should concisely introduce the AI to its role and general task in 2-3 sentences maximum. The CNL prompt should then follow, enclosed in a Markdown code block marked "cognition":
+Each prompt should begin with a plain language preamble. This preamble should concisely introduce the AI to its role and general task in 2-3 sentences maximum. The CNL prompt should then follow, enclosed in a Markdown code block, preferably marked as "cognition":
 
 \`\`\`cognition  
 \<CNL prompt goes here\>  
 \`\`\`
 
-This notation and implementation approach has been thoroughly tested with OpenAI models (4o, 4.5, o1, o3) and Anthropic's Claude models (3.5, where it originated, and 3.7). It has demonstrated effectiveness in Cursor and in agentic groups developed using the AG2 (formerly Autogen) framework.
+This notation and implementation approach has been tested with OpenAI models (4o, 4.5, o1, o3) and Anthropic's Claude models (3.5, where it originated, and 3.7). It has demonstrated effectiveness in Cursor and in agentic groups developed using the AG2 (formerly Autogen) framework.
+
+Using the CNL inside a Markdown code block is quite important for several reasons:
+
+1. **Semantic Separation**: It clearly delineates the CNL instructions from regular conversational text. This helps both humans and AI recognize where standard language ends and structured notation begins.
+
+2. **Processing Trigger**: For many AI systems, specialized code blocks can trigger different parsing behavior. Additionally, the the "cognition" marker potentially signals to the AI that what follows should be interpreted as control flow rather than conversation.
+
+3. **Visual Formatting**: Most platforms render code blocks with syntax highlighting and monospace fonts, which makes the symbolic notation easier to read for humans.
+
+4. **Prevention of Misinterpretation**: Without proper code block encapsulation, complex symbols and operators might be misinterpreted as formatting instructions by Markdown renderers or other parsers, as results of which might they might not get to the AI intact. 
+
+That said, in my testing with current LLM systems, the "cognition" tag itself (as opposed to simply using a generic code block) doesn't appear to *significantly* alter how the models process the content. The key benefit seems to be more for human readers and future-proofing for specialized parsing.
+
+If you're forced to choose between using a generic code block (\`\`\`code\`\`\`) versus no code block at all, definitely use the generic code block. But whenever possible, the specialized "cognition" tag adds value through clearer signaling of intent and potential future compatibility.
 
 ### 11.2 Tested Creation Scenario
 
