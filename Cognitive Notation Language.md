@@ -455,7 +455,7 @@ Each prompt should begin with a plain language preamble. This preamble should co
 \<CNL prompt goes here\>  
 \`\`\`
 
-This notation and implementation approach has been tested with OpenAI models (4o, 4.5, o1, o3) and Anthropic's Claude models (3.5, where it originated, and 3.7). It has demonstrated effectiveness in Cursor and in agentic groups developed using the AG2 (formerly Autogen) framework.
+This notation and implementation approach has been tested with OpenAI models (4o, 4.5, o1, o3) and Anthropic's Claude models (3.5, where it originated, and 3.7). It has demonstrated effectiveness in Cursor custom modes and in agentic groups developed using the AG2 (formerly Autogen) framework.
 
 Using the CNL inside a Markdown code block is quite important for several reasons:
 
@@ -465,7 +465,7 @@ Using the CNL inside a Markdown code block is quite important for several reason
 
 3. **Visual Formatting**: Most platforms render code blocks with syntax highlighting and monospace fonts, which makes the symbolic notation easier to read for humans.
 
-4. **Prevention of Misinterpretation**: Without proper code block encapsulation, complex symbols and operators might be misinterpreted as formatting instructions by Markdown renderers or other parsers, as results of which might they might not get to the AI intact. 
+4. **Prevention of Misinterpretation**: Without proper code block encapsulation, complex symbols and operators might be misinterpreted as formatting instructions by Markdown renderers or other parsers, as a result of which might not get to the AI intact.
 
 That said, in my testing with current LLM systems, the "cognition" tag itself (as opposed to simply using a generic code block) doesn't appear to *significantly* alter how the models process the content. The key benefit seems to be more for human readers and future-proofing for specialized parsing.
 
